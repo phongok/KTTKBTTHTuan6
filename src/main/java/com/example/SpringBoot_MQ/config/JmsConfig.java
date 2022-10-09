@@ -39,7 +39,7 @@ public class JmsConfig {
         factory.setConnectionFactory(connectionFactory());
         factory.setConcurrency("1-1");
         // true: using jms topic, false: using jms queue
-        factory.setPubSubDomain(false);
+        factory.setPubSubDomain(true);
 
         return factory;
     }
